@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -26,4 +27,33 @@ body {
     padding: 12px;
     background-color: lightgray;
     text-align: center;
+}
+
+.content{
+    padding: 50px;
+}
+
+.board{
+    min-height: 300px;
+    min-width: 300px;
+    height: 60vh;
+    width: 60vh;
+    margin: auto;
+    display: grid;
+    grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+}
+
+.square0, .square1, .square2{
+    border-bottom: 1px solid black;
+}
+.square6, .square7, .square8{
+    border-top: 1px solid black;
+}
+
+.square0, .square3, .square6{
+    border-right: 1px solid black;
+}
+
+.square2, .square5, .square8{
+    border-left: 1px solid black;
 }

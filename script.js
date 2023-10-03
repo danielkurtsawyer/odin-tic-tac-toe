@@ -12,17 +12,34 @@ const gameBoard = (() => {
         }
     };
     const getBoard = () => board;
-    return {move, getBoard};
+    return {
+        move, 
+        getBoard,
+    };
 })();
 
 // We will also want an object to control the flow of the game, which will also be a module
 const displayController = (() => {
     let move = 1; 
     const displayBoard = () => {
-
+        let num = 0;
+        let board = gameBoard.getBoard();
+        for(let i = 0; i < board.length; i++){
+            const square = document.querySelector(`.square${num}`);
+            if(board[i]){
+                square.textContent = board[i];
+            } else{
+                square.textContent = '';
+            }
+            num++;
+        };
     };
     const resetBoard = () => {
-        
+
+    }
+    return{
+        displayBoard, 
+        resetBoard,
     }
 })();
 

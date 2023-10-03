@@ -44,16 +44,23 @@ body {
 }
 
 .square0, .square1, .square2{
-    border-bottom: 1px solid black;
+    border-bottom: 2px solid black;
 }
 .square6, .square7, .square8{
-    border-top: 1px solid black;
+    border-top: 2px solid black;
 }
 
 .square0, .square3, .square6{
-    border-right: 1px solid black;
+    border-right: 2px solid black;
 }
 
 .square2, .square5, .square8{
-    border-left: 1px solid black;
+    border-left: 2px solid black;
+}
+
+.board div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }

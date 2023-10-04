@@ -30,7 +30,10 @@ body {
 }
 
 .content{
-    padding: 50px;
+    padding: 40px;
+    display: grid;
+    grid-template-rows: 20px 1fr 30px;
+    row-gap: 24px;
 }
 
 .board{
@@ -41,6 +44,7 @@ body {
     margin: auto;
     display: grid;
     grid-template: 1fr 1fr 1fr/ 1fr 1fr 1fr;
+    font-family: 'Macondo', cursive;
 }
 
 .square0, .square1, .square2{
@@ -63,4 +67,24 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 2rem;
+}
+
+.info{
+    height: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.message, .player1, .player2 {
+    text-align: center; 
+}
+
+button {
+    margin: auto;
+    height: 30px;
+    width: 100px;
+    border-radius: 12px;
+    border: 2px solid black;
+    font-family: 'Noto Sans Mono', monospace;
+    font-size: 1rem;
 }
